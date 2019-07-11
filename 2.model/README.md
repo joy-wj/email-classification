@@ -87,5 +87,5 @@ loaded_RF = pickle.load(open(rf_path, 'rb'))
 pred = loaded_RF.predict_proba(X_test)
 ```
 
-Check the notebook of [model](https://github.com/joy-wj/email-classification/blob/master/1.scrape/feature-engineering.ipynb) for details
+Check the notebook of [model](https://github.com/joy-wj/email-classification/blob/master/2.model/model.ipynb) for details
 
