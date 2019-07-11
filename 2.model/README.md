@@ -3,7 +3,7 @@
 The goal of this project is to build a model to predict labels for unknown domains. 
 
 The code assumes the csv data files are saved in the a parent-directory: `data` from the current folder.  
-The actual data files are stored in the google drive folder: [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing)
+The actual data files are stored in the google drive folder: [Google Drive > Email Classification](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing)
 
 # [Model](https://github.com/ValiMail/interns_domain_classification/blob/master/model/model.ipynb)
 This notebook shows how to combine data from below to trail our models
