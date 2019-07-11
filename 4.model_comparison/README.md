@@ -1,10 +1,10 @@
-# [Model Comparison](https://github.com/ValiMail/interns_domain_classification/blob/master/model_comparison/model_comparison.ipynb)
+# [Model Comparison](https://github.com/joy-wj/email-classification/blob/master/4.model_comparison/model_comparison.ipynb)
 
-Although we have been able to get a 96% score in our [model](https://github.com/ValiMail/interns_domain_classification/tree/master/model) session, the model is based on highly unbalanced data, i.e. 90% of the label is `trusted`, 10% of the label is `untrusted`.   
+Although we have been able to get a 96% score in our [model](https://github.com/joy-wj/email-classification/tree/master/2.model) session, the model is based on highly unbalanced data, i.e. 90% of the label is `trusted`, 10% of the label is `untrusted`.   
 
 In this session, we want to explore different model performances with both unbalanced and balanced data and apply additional Feature Engineering: __One-Hot Encoding__ to our data. See whether there is any performance increases.  
 
-Again, all the `.csv` data files are stored in [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing). Below is a summary of the different datasets  we used to compare our model performances.
+Again, all the `.csv` data files are stored in [Google Drive > Email Classification](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing). Below is a summary of the different datasets  we used to compare our model performances.
 
 ### Unbalanced vs Balanced data
 | __Data files__   |  __# of Data points__ | __Features without DNS data__ |__Trusted - Untrusted Balance__| 
@@ -48,7 +48,7 @@ Instead, we get the top 30 categories that appear most in the `tld` column accor
 ```
 ../model/saved_model/tld_cat.txt
 ```
-__For the demonstration of all the above methods, please refer to the actual code in: [`model_comparison.ipynb`](https://github.com/ValiMail/interns_domain_classification/blob/master/model_comparison/model_comparison.ipynb)__
+__For the demonstration of all the above methods, please refer to the actual code in: [`model_comparison.ipynb`](https://github.com/joy-wj/email-classification/blob/master/4.model_comparison/model_comparison.ipynb)__
 
 ## Comparison Results
 ### There are 6 sets of models created in total:
@@ -64,13 +64,13 @@ __For the demonstration of all the above methods, please refer to the actual cod
 As you can see from the above table, Model set: `lr6` and `rf6` have the highest scores and are based on Balanced data. 
 ### Hence, we achieved a 92% score for a balanced model performance. This is without any DNS data involved. Yesh!
 
-Then, we saved these best models(`lr6` and `rf6`) in the [saved_model](https://github.com/ValiMail/interns_domain_classification/tree/master/model/saved_models) folder as below.   
+Then, we saved these best models(`lr6` and `rf6`) in the [saved_model](https://github.com/joy-wj/email-classification/tree/master/2.model/saved_models) folder as below.   
 
 ```
 ../model/saved_model/best_LR_model.sav
 ../model/saved_model/best_RF_model.sav
 ../model/saved_model/tld_cat.txt
 ```
-Note: As mentioned earlier, the One-Hot Encoding Category list: `tld_cat` is saved as a `.txt` file. We will load it back in the script:[`one2one_predict.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/one2one_predict.py) in order to create the same set of Features(Columns) for our prediction data.   
+Note: As mentioned earlier, the One-Hot Encoding Category list: `tld_cat` is saved as a `.txt` file. We will load it back in the script:[`one2one_predict.py`](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/one2one_predict.py) in order to create the same set of Features(Columns) for our prediction data.   
 
-Next, we will use these saved model files to build the [pipeline](https://github.com/ValiMail/interns_domain_classification/tree/master/pipeline) with predictions in one run.
+Next, we will use these saved model files to build the [pipeline](https://github.com/joy-wj/email-classification/tree/master/5.pipeline) with predictions in one run.
