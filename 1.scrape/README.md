@@ -10,7 +10,7 @@ This folder contains web scraping scripts to generate addtional features followe
 ## API Documentation Reference
 
 * SecurityTrails API: https://docs.securitytrails.com/docs
-* Wappalyzer(Lookup API): https://www.wappalyzer.com/docs/ap
+* Wappalyzer(Lookup API): https://www.wappalyzer.com/docs/api
 
 ## About the API
 
