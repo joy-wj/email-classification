@@ -5,7 +5,7 @@ The goal of this project is to build a model to predict labels for unknown domai
 The code assumes the csv data files are saved in the a parent-directory: `data` from the current folder.  
 The actual data files are stored in the google drive folder: [Google Drive > Email Classification](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing)
 
-# [Model](https://github.com/ValiMail/interns_domain_classification/blob/master/model/model.ipynb)
+# [Model](https://github.com/joy-wj/email-classification/blob/master/2.model/model.ipynb)
 This notebook shows how to combine data from below to trail our models
 
 1. Combine data
@@ -59,7 +59,7 @@ For this model, we listed the top 20 most important features that are come up wi
 - No.19 feature: spf_exists (0.0172)
 - No.20 feature: mx_google (0.0168)
 
-We will report on distribution for some of the boolean columns from the top 20 important features in the [distribution](https://github.com/ValiMail/interns_domain_classification/tree/master/distribution) session.
+We will report on distribution for some of the boolean columns from the top 20 important features in the [distribution](https://github.com/joy-wj/email-classification/tree/master/3.distribution) session.
 
 
 ## Save & Load models
@@ -87,5 +87,5 @@ loaded_RF = pickle.load(open(rf_path, 'rb'))
 pred = loaded_RF.predict_proba(X_test)
 ```
 
-Check the [model notebook](https://github.com/ValiMail/interns_domain_classification/blob/master/model/model.ipynb) for details
+Check the notebook of [model](https://github.com/joy-wj/email-classification/blob/master/1.scrape/feature-engineering.ipynb) for details
 
