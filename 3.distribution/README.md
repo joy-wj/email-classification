@@ -1,9 +1,9 @@
-# [EDA & Distribution](https://github.com/ValiMail/interns_domain_classification/blob/master/distribution/EDA_Correlations_Distributions.ipynb) 
+# [EDA & Distribution](https://github.com/joy-wj/email-classification/blob/master/3.distribution/EDA_Correlations_Distributions.ipynb) 
 
 This notebook shows the EDA and report on distributions for for the below csv files:
-* 130k domains with DNS and web scraped features data: [`domain_130k_dns_features.csv`](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a)
+* 130k domains with DNS and web scraped features data: [`domain_130k_dns_features.csv`](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing)
 
-Please continue the journey in the [model_comparison](https://github.com/ValiMail/interns_domain_classification/tree/master/model_comparison) session after this. 
+Please continue the journey in the [model_comparison](https://github.com/joy-wj/email-classification/tree/master/4.model_comparison) session after this. 
 
 # Correlations on numeric columns
 
