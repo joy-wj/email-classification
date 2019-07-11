@@ -4,7 +4,7 @@ Although we have been able to get a 96% score in our [model](https://github.com/
 
 In this session, we want to explore different model performances with both unbalanced and balanced data and apply additional Feature Engineering: __One-Hot Encoding__ to our data. See whether there is any performance increases.  
 
-Again, all the `.csv` data files are stored in [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a). Below is a summary of the different datasets  we used to compare our model performances.
+Again, all the `.csv` data files are stored in [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing). Below is a summary of the different datasets  we used to compare our model performances.
 
 ### Unbalanced vs Balanced data
 | __Data files__   |  __# of Data points__ | __Features without DNS data__ |__Trusted - Untrusted Balance__| 

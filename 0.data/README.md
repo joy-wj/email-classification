@@ -1,6 +1,6 @@
 # Data Dictionary
 
-Please download all csv files here in the google drive folder. [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a)<br/>
+Please download all csv files here in the google drive folder. [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing)<br/>
 Save the csv files in this folder (`data`) in your local directory, which includes the below:
 
 | __Data files__   |  __# of Data points__ | __Feature Definition__ |

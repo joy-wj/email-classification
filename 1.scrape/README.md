@@ -29,7 +29,7 @@ __The API scraping scripts assume that the `config.py` file is stored in the sam
 
 ## Data
 
-The domain data csv file is stored in the google drive folder [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a) as:
+The domain data csv file is stored in the google drive folder [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing) as:
 
 ```domain_130k.csv```
 

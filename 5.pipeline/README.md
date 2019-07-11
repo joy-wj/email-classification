@@ -55,7 +55,7 @@ The goal of the `predict.py` script is to take a `.csv` file with a single colum
 
 The script takes `test_sample.csv` as an example list of input domains and look up the domains in the assumed databse in order to extract matched data. The assumed database is a test file called `test_combined.csv`, which contains DNS, Scraped Features in Numeric and Boolean columns.
 
-The two mentioned files are also from in the folder of [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a) and should be saved in the local directory as below.
+The two mentioned files are also from in the folder of [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing) and should be saved in the local directory as below.
 
 ```text
 ../data/test_combine.csv
