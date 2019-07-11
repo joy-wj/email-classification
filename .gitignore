@@ -1,0 +1,9 @@
+1.scrape/config.py
+1.scrape/.ipynb_checkpoints/*
+
+2.model/.ipynb_checkpoints/*
+3.distribution/.ipynb_checkpoints/*
+4.model_comparison/.ipynb_checkpoints/*
+
+5.pipeline/config.py
+5.pipeline/.ipynb_checkpoints/*
