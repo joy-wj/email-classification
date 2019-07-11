@@ -1,0 +1,2 @@
+security_trails_api_key = 'JJUgjk3i9Q0vADQQsYWx8ekGbWc8u0Wb'
+wappalyzer_api_key = "GP93gT9IfV8KKx4fe0DIw46j4cbI1kq47ZFGfd1y"
