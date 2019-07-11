@@ -4,7 +4,7 @@ This folder contains web scraping scripts to generate addtional features followe
 
 1. SecurityTrails records: [`security_trails.py`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/security_trails.py)
 2. Wappalyzer records: [`wappalyzer.py`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/wappalyzer.py)
-3. Social Medial Links: [`social_scrape.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/social_scrape.py)
+3. Social Medial Links: [`social_scrape.py`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/social_scrape.py)
 4. Feature Engineering Demonstration notebook: [`feature-engineering.ipynb`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/feature-engineering.ipynb)
 
 ## API Documentation Reference
