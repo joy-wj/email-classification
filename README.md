@@ -3,12 +3,12 @@ Workspace for the Data Science interns to work on the domain classification proj
 
 There will be a few steps involved in the following folders:
 
-0. [data](https://github.com/ValiMail/interns_domain_classification/tree/master/data): A directory required to store all the csv files in your local folder
-1. [scrape](https://github.com/ValiMail/interns_domain_classification/tree/master/scrape): Web-scrape additional data given domain csv files
-2. [model](https://github.com/ValiMail/interns_domain_classification/tree/master/model): Train models based on given DNS data and scraped data created from feature engineering
-3. [distribution](https://github.com/ValiMail/interns_domain_classification/tree/master/distribution): Display Model results and performance comparisons and visualize distributions of features
-4. [model_comparison](https://github.com/ValiMail/interns_domain_classification/tree/master/model_comparison): Compare Model performances with different data
-5. [pipeline](https://github.com/ValiMail/interns_domain_classification/tree/master/pipeline): Combine modularized scripts into one run
+0. [data](https://github.com/joy-wj/email-classification/tree/master/0.data): A directory required to store all the csv files in your local folder
+1. [scrape](https://github.com/joy-wj/email-classification/tree/master/1.scrape): Web-scrape additional data given domain csv files
+2. [model](https://github.com/joy-wj/email-classification/tree/master/2.model): Train models based on given DNS data and scraped data created from feature engineering
+3. [distribution](https://github.com/joy-wj/email-classification/tree/master/3.distribution): Display Model results and performance comparisons and visualize distributions of features
+4. [model_comparison](https://github.com/joy-wj/email-classification/tree/master/4.model_comparison): Compare Model performances with different data
+5. [pipeline](https://github.com/joy-wj/email-classification/tree/master/5.pipeline): Combine modularized scripts into one run
 
 For detailed steps, please enter the respective folders to continue to explore. Before that, make sure to set up the environment by following __the below instructions__. 
 
@@ -29,13 +29,13 @@ Please follow instruction [here](https://jupyter.org/install) to install jupyter
 It is strongly recommended to install Python and Jupyter using the [Anaconda Distribution](https://www.anaconda.com/distribution/), which includes Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science.
 
 ### Other Packages 
-Please run the below command line to install packages included in the requirements file [`requirements.txt`](https://github.com/ValiMail/interns_domain_classification/blob/master/requirements.txt).
+Please run the below command line to install packages included in the requirements file [`requirements.txt`](https://github.com/joy-wj/email-classification/blob/master/requirements.txt).
 
 ```bash
 pip install -r requirements.txt
 ```
 ## Safe-keeping the API Key
-After you have cloned or downloaded the repository to your local directory, make sure that `config.py` file(required to run the API tools) is saved in both of the [scrape](https://github.com/ValiMail/interns_domain_classification/tree/master/scrape) and [pipeline](https://github.com/ValiMail/interns_domain_classification/tree/master/pipeline) folders in your local directory only. 
+After you have cloned or downloaded the repository to your local directory, make sure that `config.py` file(required to run the API tools) is saved in both of the [scrape](https://github.com/joy-wj/email-classification/tree/master/1.scrape) and [pipeline](https://github.com/joy-wj/email-classification/tree/master/5.pipeline) folders in your local directory only. 
 
 ```
 interns_domain_classification/scrape/config.py
@@ -67,7 +67,7 @@ __model__
 - Other models could also be expored other than Logistic Regression and Random Forest.
 
 ## Appendix
-[Final Prensetation Deck](https://github.com/ValiMail/interns_domain_classification/blob/master/Final_Presentation_Slides.pdf)
+[Final Prensetation Deck](https://github.com/joy-wj/email-classification/blob/master/Final_Presentation_Slides.pdf)
 
 
 ### Thank you for exploring. Have Fun!
