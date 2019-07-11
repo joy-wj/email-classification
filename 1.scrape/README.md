@@ -2,10 +2,10 @@
 
 This folder contains web scraping scripts to generate addtional features followed by a demonstration notebook of feature engineering:
 
-1. SecurityTrails records: [`security_trails.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/security_trails.py)
-2. Wappalyzer records: [`wappalyzer.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/wappalyzer.py)
+1. SecurityTrails records: [`security_trails.py`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/security_trails.py)
+2. Wappalyzer records: [`wappalyzer.py`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/wappalyzer.py)
 3. Social Medial Links: [`social_scrape.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/social_scrape.py)
-4. Feature Engineering Demonstration notebook: [`feature-engineering.ipynb`](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/feature-engineering.ipynb)
+4. Feature Engineering Demonstration notebook: [`feature-engineering.ipynb`](https://github.com/joy-wj/email-classification/blob/master/1.scrape/feature-engineering.ipynb)
 
 ## API Documentation Reference
 
@@ -49,7 +49,7 @@ The scraping script is going to generate additional features and concantenate th
 
 Due to the API quota constraint, we created some small-sized testing data in the Google Drive folder: [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a), like `test_domain_100.csv`, with only 100 domains in the csv file to test the API scripts.
 
-## [1. SecurityTrails](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/security_trails.py)
+## [1. SecurityTrails](https://github.com/joy-wj/email-classification/blob/master/1.scrape/security_trails.py)
 
 The goal of the `security_trails.py` script is to take a `.csv` file with a column of domains and generate associated security trails critical information. The column names to be generated are listed below:
 
@@ -76,7 +76,7 @@ Note:
 1. `file_path` is where the domain csv file stores, `new_file_path` is where the generated csv file going to be. You can put the two paths as the same one to update the original file.
 2. The data files are not necessarily to be stored in the same directory as the script.
 
-## [2. Wappalyzer](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/wappalyzer.py)
+## [2. Wappalyzer](https://github.com/joy-wj/email-classification/blob/master/1.scrape/wappalyzer.py)
 
 The goal of the `wappalyzer.py` script is to take a `.csv` file with a column of domains and generate associated web technology information. The column names to be generated are listed below:
 
@@ -98,7 +98,7 @@ Note:
 1. `file_path` is where the domain csv file stores, `new_file_path` is where the generated csv file going to be. You can put the two paths as the same one to update the original file.
 2. The data files are not necessarily to be stored in the same directory as the script.
 
-## [3. Social Media Links](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/social_scrape.py)
+## [3. Social Media Links](https://github.com/joy-wj/email-classification/blob/master/1.scrape/social_scrape.py)
 
 The goal of the `social_scrape.py` script is to take a `.csv` file with a column of domains and generate associated web technology information. The column names to be generated are listed below:
 
@@ -121,7 +121,7 @@ Note:
 2. The data files are not necessarily to be stored in the same directory as the script.
 3. The scraping script is using `multiprocessing` to perform scraping on multiple URLs simultaneously thus saving on time. The default number of multi-processor is 24 right now and you are free to change it in the script. However, the script is not necessarily running faster by setting more multi-processors.
 
-## [4. Feature Engineering Demonstration](https://github.com/ValiMail/interns_domain_classification/blob/master/scrape/feature-engineering.ipynb)
+## [4. Feature Engineering Demonstration](https://github.com/joy-wj/email-classification/blob/master/1.scrape/feature-engineering.ipynb)
 
 The goal of the `feature-engineering.ipynb` is to demonstrate on Feature Engineering, which is how to create additional columns from API scraped records and scraped Social Media Links, specifically:
 
@@ -140,4 +140,4 @@ Make sure the data are saved in your local directory as:
 ../data/...
 ```
 
-Next, we will be using the combined feature sets created from Feature Engineering process to build our classification models in the [model](https://github.com/ValiMail/interns_domain_classification/tree/master/model) session.
+Next, we will be using the combined feature sets created from Feature Engineering process to build our classification models in the [model](https://github.com/joy-wj/email-classification/tree/master/2.model) session.
