@@ -2,11 +2,11 @@
 
 In this session, there are three python scripts:
 
-1. Prediction on domain without any features: [`one2one_predict.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/one2one_predict.py)
-2. Prediction on domain given features: [`predict.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/predict.py)
-3. A list of functions used: [`summary_fn.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/summary_fn.py)
+1. Prediction on domain without any features: [`one2one_predict.py`](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/one2one_predict.py)
+2. Prediction on domain given features: [`predict.py`](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/predict.py)
+3. A list of functions used: [`summary_fn.py`](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/summary_fn.py)
 
-## [1. One to One Prediction](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/one2one_predict.py)
+## [1. One to One Prediction](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/one2one_predict.py)
 
 The goal of the `one2one_predict.py` script is to predict probability of a single domain being trusted.   
 __input__: a single domain in string format, e.g. 'example.com'  
@@ -18,11 +18,11 @@ With below steps:
   * Wappalyzer
   * Social Media Links
   * 30 tld features generated from our Best Model
-* Load model of `.sav` file from [saved_model](https://github.com/ValiMail/interns_domain_classification/tree/master/model/saved_models) folder, the loaded model is  pre-trained with the same set of features(columns) as the prediction script would produce. You can also load other the model in this script, refer to more detailed explanation in the following session (__Portable Models__)
+* Load model of `.sav` file from [saved_model](https://github.com/joy-wj/email-classification/tree/master/2.model/saved_models) folder, the loaded model is  pre-trained with the same set of features(columns) as the prediction script would produce. You can also load other the model in this script, refer to more detailed explanation in the following session (__Portable Models__)
 * Make a prediction for the single data entry and generate a probability of it being `trusted`
 
 ### Portable models
-Pre-trained models are saved in the [saved_model](https://github.com/ValiMail/interns_domain_classification/tree/master/model/saved_models) folder. 
+Pre-trained models are saved in the [saved_model](https://github.com/joy-wj/email-classification/tree/master/2.model/saved_models) folder. 
 ```
 ../model/saved_model/best_LR_model.sav
 ../model/saved_model/best_RF_model.sav
@@ -35,12 +35,12 @@ For instance, in our case, the feature set of the training set used to pre-train
 | API records |  Social Links | 31 tld columns |
 (All converted to numeric column type and dropped the original categorical tld column)
 ```
-In short, to replace the model in the pipeline, which may be trained from a different set of features, you will have to modify the funcitons of creating features in the [`summary_fn.py`](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/summary_fn.py) script. 
+In short, to replace the model in the pipeline, which may be trained from a different set of features, you will have to modify the funcitons of creating features in the [`summary_fn.py`](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/summary_fn.py) script. 
 
 ### API Key
 
 For security concern, the API keys are stored in one single file called `config.py` __only in your local directory__. <br/>
-:warning: __Please make sure that the same `config.py` file mentioned in [scrape](https://github.com/ValiMail/interns_domain_classification/tree/master/scrape) folder is stored in the same local directory as `one2one_predict.py`, in this case is your local [pipline](https://github.com/ValiMail/interns_domain_classification/tree/master/pipeline) folder.__
+:warning: __Please make sure that the same `config.py` file mentioned in [scrape](https://github.com/joy-wj/email-classification/tree/master/1.scrape) folder is stored in the same local directory as `one2one_predict.py`, in this case is your local [pipline](https://github.com/joy-wj/email-classification/tree/master/5.pipeline) folder.__
 
 To run the script, please do below (e.g. `domain = 'example.com'`)
 
@@ -49,13 +49,13 @@ python one2one_predict.py 'example.com'
 ```
 
 
-## [2. Prediction with existing data features](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/predict.py)
+## [2. Prediction with existing data features](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/predict.py)
 
 The goal of the `predict.py` script is to take a `.csv` file with a single column of domains and generate predictions based on our existing data columns available.
 
 The script takes `test_sample.csv` as an example list of input domains and look up the domains in the assumed databse in order to extract matched data. The assumed database is a test file called `test_combined.csv`, which contains DNS, Scraped Features in Numeric and Boolean columns.
 
-The two mentioned files are also from in the folder of [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing) and should be saved in the local directory as below.
+The two mentioned files are also from in the folder of [Google Drive > Email Classification](https://drive.google.com/drive/folders/1cEiKNfFSNhfcsXVjBqI-RywphjTMxKsE?usp=sharing) and should be saved in the local directory as below.
 
 ```text
 ../data/test_combine.csv
@@ -79,7 +79,7 @@ Note:
 1. `file_path` is where the domain csv file stores, `output_path` is where the generated prediction csv file going to be.
 2. The input domain namelist and output prediction files are not necessarily to be stored in the same directory as the script.
 
-## [3. Summary Functions](https://github.com/ValiMail/interns_domain_classification/blob/master/pipeline/summary_fn.py)
+## [3. Summary Functions](https://github.com/joy-wj/email-classification/blob/master/5.pipeline/summary_fn.py)
 
 The functions in this script are a combination of web-scraping and feature engineering. These functions are in support of the script `one2one_predict.py` mentioned in above.
 
@@ -94,7 +94,7 @@ The functions in this script are a combination of web-scraping and feature engin
 * `create_features_social`: Based on the Social Media Links, create boonlean features
 * `one_hot_enc`: Given a top level domain category list(`tld_cat`) and DataFrame, create one hot encoded features for additional 31 columns.
 
-Note: the `tld_cat` list is generated in the [`model_comparison.ipynb`](https://github.com/ValiMail/interns_domain_classification/blob/master/model_comparison/model_comparison.ipynb) process from the best model and is also save in the [saved_model](https://github.com/ValiMail/interns_domain_classification/tree/master/model/saved_models) folder.
+Note: the `tld_cat` list is generated in the [`model_comparison.ipynb`](https://github.com/joy-wj/email-classification/blob/master/4.model_comparison/model_comparison.ipynb) process from the best model and is also save in the [saved_model](https://github.com/joy-wj/email-classification/tree/master/2.model/saved_models) folder.
 
 ```text
 ../model/saved_model/tld_cat.txt
