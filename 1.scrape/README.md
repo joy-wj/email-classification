@@ -47,7 +47,7 @@ The scraping script is going to generate additional features and concantenate th
 
 ### Test Data
 
-Due to the API quota constraint, we created some small-sized testing data in the Google Drive folder: [Google Drive > Data Science > data](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a), like `test_domain_100.csv`, with only 100 domains in the csv file to test the API scripts.
+Due to the API quota constraint, we created some small-sized testing data in the Google Drive folder: [Google Drive > email_classification](https://drive.google.com/drive/folders/1eImejP0Yh5Wf0pd1PAfwiVDReUCgM45a), like `test_domain_100.csv`, with only 100 domains in the csv file to test the API scripts.
 
 ## [1. SecurityTrails](https://github.com/joy-wj/email-classification/blob/master/1.scrape/security_trails.py)
 
